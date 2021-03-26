@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JAVED">
+    <meta name="keywords" content="online notes,Notes,note,diary,online diary, Journal">
+    <meta name="description" content=" Online Notes container which keep your notes safe and no need to download app to acquire device storage">
+    <title>Notes</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+</head>
+<body>
+    <header id="header">
+        <div id="main_head">
+            <i class="fas fa-bars"></i>
+            <a href="#notes">
+                <i class="far fa-edit"></i>
+                <h1 id="title">Notes</h1>
+            </a>
+        </div>
+    </header>
+    <div id="delete_div">
+        <div style="display: flex; justify-content: flex-end;">
+        <p id="selNote"></p>
+        <p id="cancel" class="delbtn">cancel</p>
+        <p id="delAll" class="delbtn">delete</p>
+        </div>
+    </div>
+    <div id="container">
+        <div id="menu">
+            <div id="menu_col">
+                <div class="option" id="write">
+                    <i class="fas fa-pencil-alt"></i>
+                    <p class="icon_title">Write</p>
+                </div>
+                <div class="option" id="theme">
+                    <i class="fas fa-moon"></i>
+                    <p class="icon_title">Dark theme</p>
+                </div>
+                <div class="option" id="delete">
+                    <i class="far fa-trash-alt"></i>
+                    <p class="icon_title">Delete</p>
+                </div>
+            </div>
+        </div>
+        <div id="notes">
+            <div id="overlay"></div>
+            <div id="btn-div">
+                <button id="btn">
+                    <span id="btn_icon"><i class="fas fa-arrow-right"></i></span>
+                    <span id="add_note">Add note</span>
+                </button>
+            </div>
+            <div id="note_container" class="row">
+                <div id="watermark">
+                    <i class="far fa-comment-alt"></i>
+                    <p> Add notes here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>owner: JAVED<span>(EST. 2020)</span></footer>
+    <script src="script.js"></script>
+</body>
+</html>
